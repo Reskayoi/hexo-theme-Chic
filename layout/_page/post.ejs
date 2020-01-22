@@ -16,12 +16,12 @@
 
                     <% if(page.date && theme.post_date_enable){ %>
                         <span class="post-time">
-                        Date: <a href="#"><%- date(page.date, theme.date_format)  %>&nbsp;&nbsp;<%- time(page.date, theme.time_format)%></a>
+                        Last Update Date: <%- date(page.updated	, theme.date_format)  %>
                         </span>
                     <% } %>
                     <% if(page.categories.length!==0 && theme.post_category_enable){ %>
                         <span class="post-category">
-                    Category:
+                            &nbsp;&nbsp;&nbsp;Category:
                             <% page.categories.forEach(item=>{ %>
                                 <a href="<%- url_for(item.path) %>"><%- item.name %></a>
                             <% }) %>
@@ -51,7 +51,7 @@
                 <% } %>
                 <% if(theme.post_copyright_license_enable){ %>
                     <p class="copyright-item">
-                        <span>License:</span>
+                        <!-- <span>License:</span> -->
                         <span><%- theme.post_copyright_license_text %></span>
                     </p>
                 <% } %>
@@ -64,7 +64,7 @@
 
             </section>
         <% } %>
-        <section class="post-tags">
+       <!--  <section class="post-tags">
             <div>
                 <span>Tag(s):</span>
                 <span class="tag">
@@ -80,7 +80,7 @@
                 <span>· </span>
                 <a href="<%- config.root %>">home</a>
             </div>
-        </section>
+        </section> -->
         <section class="post-nav">
             <% if(post.prev){ %>
                 <a class="prev" rel="prev" href="<%- url_for(post.prev.path)%>"><%- post.prev.title%></a>

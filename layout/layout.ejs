@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="<%= config.language %>">
+<html lang="<%= config.language %>" class="han-init">
 <head>
     <%- partial('_partial/head',{cache: true}) %>
 </head>
@@ -11,5 +11,6 @@
         </div>
         <%- partial('_partial/footer',{cache: true}) %>
     </div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/Han/3.3.0/han.min.js"></script>
 </body>
 </html>

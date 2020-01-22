@@ -48,7 +48,7 @@ input[type="radio"]:not(:checked) + label:after {
     height: 12px;
     left: 1px;
     position: absolute;
-    top: .5px;
+    top: 1px;
     width: 12px;
     box-shadow: 0.2px 0.2px 1px 0.5px rgb(180,180,180);
 }

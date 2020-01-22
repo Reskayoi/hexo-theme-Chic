@@ -6,6 +6,8 @@
   padding-top 2rem
 
   .archive-item
+    margin-bottom 2rem
+  .archive-item-category
     margin-left 2rem
 
 .archive-item-link
@@ -29,9 +31,23 @@
         transition color 0.2s ease, border-color 0.2s ease, background 0.2s ease, opacity 0.2s ease
 
   .archive-item-date
-    float right
-    text-align right
     color $light-font-secondary-color
+    margin-top -0.5rem
 
     .dark-theme & 
       color $dark-font-secondary-color
+
+  .post-excerpt
+    padding-top 0.5rem
+    .dark-theme & 
+      color $dark-font-color
+
+  .archive-item+.archive-item
+    border-top 1px solid $light-border-color
+    padding-top 2rem
+    .dark-theme &
+      border-top 1px solid $dark-border-color
+
+  .post-title-archive
+    font-size 1.5em
+    font-weight 600
