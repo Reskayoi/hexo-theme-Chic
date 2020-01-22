@@ -11,8 +11,14 @@
             <div class="post-title-archive"><a class="archive-item-link" href="<%- url_for(post.path) %>"><%= post.title %></a></div>
             <div class="archive-item-date"><%- date(post.date, theme.date_format) %></div>
             <div class="post-excerpt">
-                <% if(post.description){ %><%- post.description %>
-                 <% } else { %><% if(post.excerpt){ %><%- post.excerpt %><%}%><%}%>
+                <% if(post.description){ %>
+                    <%- post.description %>
+                <% } else { %>
+                    <% if(post.excerpt){ %>
+                        <% let cuthtml=post.excerpt.replace('<p>','') %>
+                        <%- cuthtml %>
+                    <%}%>
+                <%}%>
             </div>
         </article>
     <% }) %>
