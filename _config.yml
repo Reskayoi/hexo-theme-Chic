@@ -5,7 +5,7 @@ navname: Bentham's Blog
 nav:
   Posts: /archives
   Categories: /category
-  Tags: /tag
+#  Tags: /tag
   About: /about
 
 # favicon
